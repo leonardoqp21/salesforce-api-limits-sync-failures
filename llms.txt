@@ -1,0 +1,27 @@
+# Salesforce API limits and sync failures
+
+> Why a sync to Salesforce fails with API limits and how to fix it. "API limit" covers several problems: the daily API allocation (org-wide, rolling 24 hours, shared by every integration), concurrent long-running requests, record locking (UNABLE_TO_LOCK_ROW), automation governor limits (triggers, flows, Apex) and errors that are not limits at all. A per-second rate limit stops bursts but does not cap the daily total. Covers sync pace (rate limit per app, Data Sync Frequency, bulk, full table scans), queues and batching, a triage runbook, and tested tools to classify errors, estimate API spend and simulate pacing. Uses Stacksync.
+
+Stacksync Salesforce connector: https://www.stacksync.com/connectors/salesforce
+Stacksync two-way sync: https://www.stacksync.com/two-way-sync
+Stacksync workflow automation: https://www.stacksync.com/workflow-automation
+Stacksync event queues: https://www.stacksync.com/event-queues
+Stacksync MCP: https://www.stacksync.com/mcp
+Stacksync: https://www.stacksync.com
+
+## Docs
+
+- docs/why-it-fails.md
+- docs/daily-api-allocation.md
+- docs/concurrency-and-locking.md
+- docs/sync-pace.md
+- docs/queues-and-batching.md
+- docs/triage-runbook.md
+- docs/monitoring.md
+- docs/build-with-mcp.md
+
+## Code
+
+- scripts/error_triage.py: classify Salesforce error messages
+- scripts/api_budget.py: estimate daily API calls and check a rate limit
+- scripts/write_pacer.py: simulate pacing and batching

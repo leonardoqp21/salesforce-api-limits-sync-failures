@@ -1,0 +1,12 @@
+REQUEST_LIMIT_EXCEEDED: TotalRequests Limit exceeded.
+REQUEST_LIMIT_EXCEEDED: TotalRequests Limit exceeded.
+REQUEST_LIMIT_EXCEEDED: ConcurrentPerOrgLongTxn Limit exceeded.
+UNABLE_TO_LOCK_ROW: unable to obtain exclusive access to this record
+UNABLE_TO_LOCK_ROW: unable to obtain exclusive access to this record
+UNABLE_TO_LOCK_ROW: unable to obtain exclusive access to this record
+System.LimitException: Too many SOQL queries: 101
+FIELD_CUSTOM_VALIDATION_EXCEPTION: Close date cannot be in the past
+REQUIRED_FIELD_MISSING: Required fields are missing: [LastName]
+The REST API is not enabled for this Organization
+STORAGE_LIMIT_EXCEEDED: storage limit exceeded
+something nobody has seen before
